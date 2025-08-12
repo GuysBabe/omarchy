@@ -12,8 +12,9 @@ if [ -z "$OMARCHY_BARE" ]; then
       echo -e "\e[31mFailed to install $pkg. Continuing without!\e[0m"
   done
 
-  yay -S --noconfirm --needed 1password-beta 1password-cli ||
-    echo -e "\e[31mFailed to install 1password. Continuing without!\e[0m"
+  # Don't need 1password, I use bitwarden.
+  #yay -S --noconfirm --needed 1password-beta 1password-cli ||
+    #echo -e "\e[31mFailed to install 1password. Continuing without!\e[0m"
 fi
 
 # Copy over Omarchy applications
